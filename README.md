@@ -1,34 +1,63 @@
-# Hospital Food Waste Modeling
+# Healthcare Food Waste Analysis & Metrics Evaluation
 
-This project analyzes hospital food production data to estimate **overproduction-related food waste** using standardized tray assumptions and scenario-based modeling.
-
-Rather than assuming perfect measurement, this analysis reflects **real-world operational constraints**, where detailed waste tracking systems do not exist. The goal is to identify where food waste is *observable* within the production process and to document the limitations that prevent deeper visibility.
+SQL-based analytics project exploring hospital meal production data to evaluate food waste patterns, operational variability, and measurement reliability in a healthcare food service environment.
 
 ---
 
-## Core Question
+## Dashboard Overview
 
-**How much food waste is implied by standard hospital production practices, and how is that waste distributed across units under different waste scenarios?**
+![Hospital Waste Dashboard](Visuals/Hospital%20Waste%20Dashboard.png)
 
----
-
-## What This Project Does
-
-- Models planned food production using a standardized tray approach  
-- Applies conservative, expected, and high waste scenarios  
-- Estimates waste magnitude in pounds  
-- Ranks hospital units by modeled waste contribution  
-- Explicitly documents assumptions and data gaps  
+This dashboard summarizes estimated waste levels, production variability, and distribution across hospital units and meal periods.
 
 ---
 
-## What This Project Does Not Do
+## Key Findings
 
-- Assign blame to staff or individual units  
-- Diagnose labor inefficiency  
-- Measure individual patient consumption  
-- Claim exact waste quantities  
+- Estimated **~4,100 lbs of overproduction waste across a ~90-day window** (~45 lbs/day expected scenario)
+- Waste volume appeared **relatively evenly distributed across meal periods**, suggesting systemic overproduction rather than isolated operational errors
+- Certain hospital units showed **significantly higher production variance**, indicating potential inefficiencies in buffer policies
+- Inconsistent measurement units and logging practices prevented reliable waste tracking without additional modeling
+
+Full interpretation available in:  
+- `Analysis/Findings.md`
 
 ---
 
-This project is intended as a **decision-support artifact**, not a compliance audit.
+## Project Context
+
+This analysis was inspired by real operational observations in a hospital food service environment.
+
+During meal production, staff must balance:
+
+- regulatory compliance
+- patient meal availability
+- waste reduction
+
+Because direct waste tracking systems were not available, a partially synthetic dataset was created using real operational patterns and production constraints.
+
+This allowed the project to model realistic decision scenarios while preserving operational logic between units, meal periods, and production buffers.
+
+---
+
+## Tools Used
+
+- SQL (SQLite)
+- Excel
+- Tableau
+
+---
+
+## Assumptions & Limitations
+
+Because direct waste tracking was unavailable, the analysis uses modeled estimates derived from observed production behavior.
+
+Key assumptions and limitations are documented here:
+
+`Assumptions_and_Limitations.md`
+
+---
+
+## Project Focus
+
+Evaluating the reliability of operational metrics and exploring decision-support insights in environments with imperfect data.
