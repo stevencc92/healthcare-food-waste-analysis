@@ -14,10 +14,12 @@ This dashboard summarizes estimated waste levels, production variability, and di
 
 ## Key Findings
 
-- Modeled buffer-rate sensitivity across three operational scenarios (5% / 10% / 18% waste rate), quantifying how incremental policy changes affect overproduction volume — the core analytical output of this project
-- Estimated ~4,100 lbs of overproduction waste across a ~90-day window (~45 lbs/day) under the expected 10% waste scenario; high scenario projects substantially higher exposure
+- Modeled buffer-rate sensitivity across three operational scenarios (5% / 10% / 18% waste rate), projecting total 90-day waste of 2,052 lbs (low), 4,104 lbs (expected), and 7,388 lbs (high) — a 5,335 lb range depending on buffer policy
+- Under the expected scenario, three units — TSON_3100, 2_EAST_2000, and MED_TELE_4100 — account for approximately 73% of estimated waste, identifying them as the primary targets for buffer policy review
 - Waste volume appeared relatively evenly distributed across meal periods, suggesting systemic overproduction rather than isolated operational errors
 - Inconsistent measurement units and logging practices in the real environment prevented reliable direct tracking, motivating the synthetic dataset approach
+
+
 
 Full interpretation available in:  
 - `Analysis/Findings.md`
