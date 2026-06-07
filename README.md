@@ -14,10 +14,10 @@ This dashboard summarizes estimated waste levels, production variability, and di
 
 ## Key Findings
 
-- Estimated **~4,100 lbs of overproduction waste across a ~90-day window** (~45 lbs/day expected scenario)
-- Waste volume appeared **relatively evenly distributed across meal periods**, suggesting systemic overproduction rather than isolated operational errors
-- Certain hospital units showed **significantly higher production variance**, indicating potential inefficiencies in buffer policies
-- Inconsistent measurement units and logging practices prevented reliable waste tracking without additional modeling
+- Modeled buffer-rate sensitivity across three operational scenarios (5% / 10% / 18% waste rate), quantifying how incremental policy changes affect overproduction volume — the core analytical output of this project
+- Estimated ~4,100 lbs of overproduction waste across a ~90-day window (~45 lbs/day) under the expected 10% waste scenario; high scenario projects substantially higher exposure
+- Waste volume appeared relatively evenly distributed across meal periods, suggesting systemic overproduction rather than isolated operational errors
+- Inconsistent measurement units and logging practices in the real environment prevented reliable direct tracking, motivating the synthetic dataset approach
 
 Full interpretation available in:  
 - `Analysis/Findings.md`
